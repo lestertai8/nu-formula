@@ -1,0 +1,21 @@
+
+
+.SocialsContainer {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.SocialsCirclesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.SocialsCircle {
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+}
