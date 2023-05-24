@@ -27,25 +27,28 @@ function App() {
       <div style={left_style}>
         <AboutTeamContainerLeft
           heading="Formula SAE"
-          text=<p>
-            Formula SAE (FSAE) is an intercollegiate engineering design
-            competition organized by the Society of Automotive Engineers (SAE),
-            where student teams design, build, and race formula-style cars. FSAE
-            began in the USA in 1978, and now includes hundreds of international
-            teams that compete in eight competitions around the world.
-            <br></br>
-            <br></br>The FSAE series is internationally regarded as one of the
-            most rigorous collegiate design competitions. Each year, teams spend
-            8 to 12 months preparing for competition.
-            <br></br>
-            <br></br>The concept of the competition is for students to design,
-            build, and race a prototype formula-style vehicle. The prototype is
-            marketed towards the non-professional, weekend autocross racer. It
-            must be high-performance, low cost, easy to maintain, and suitable
-            for manufacture at 1000 units per year. Students manage all aspects
-            of the project like a small business, from the technical design to
-            the management of an interdisciplinary team.
-          </p>
+          text={
+            <p>
+              Formula SAE (FSAE) is an intercollegiate engineering design
+              competition organized by the Society of Automotive Engineers
+              (SAE), where student teams design, build, and race formula-style
+              cars. FSAE began in the USA in 1978, and now includes hundreds of
+              international teams that compete in eight competitions around the
+              world.
+              <br></br>
+              <br></br>The FSAE series is internationally regarded as one of the
+              most rigorous collegiate design competitions. Each year, teams
+              spend 8 to 12 months preparing for competition.
+              <br></br>
+              <br></br>The concept of the competition is for students to design,
+              build, and race a prototype formula-style vehicle. The prototype
+              is marketed towards the non-professional, weekend autocross racer.
+              It must be high-performance, low cost, easy to maintain, and
+              suitable for manufacture at 1000 units per year. Students manage
+              all aspects of the project like a small business, from the
+              technical design to the management of an interdisciplinary team.
+            </p>
+          }
           img={img}
         ></AboutTeamContainerLeft>
       </div>
@@ -89,6 +92,7 @@ function App() {
           img={img}
         ></AboutTeamContainerRight>
       </div>
+      <Footer />
     </div>
   );
 }
