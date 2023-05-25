@@ -1,0 +1,40 @@
+.VerticalSwitchBarContainer {
+    display: flex;
+    padding-left: 100px;
+}
+
+.OurTeamsContainer {
+    display: flex;
+    flex: 3;
+    align-items: row;
+}
+
+.TextImageCaptionContainer {
+    display: flex;
+    flex: 2;
+    display: flex;
+    align-items: row;
+    justify-content: space-around;
+    margin: 30px;
+    margin-left: 150px;
+}
+
+.TeamDescriptionContainer {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    font-size: 20px;
+    margin-right: 60px
+}
+
+.PhotoCaption {
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.TeamPhoto {
+    height: 250px;
+    width: 330px;
+    background-color: grey;
+}

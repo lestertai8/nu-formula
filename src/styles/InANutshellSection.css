@@ -1,0 +1,15 @@
+.ImagesTable {
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+}
+
+.ImagesRow {
+    display: flex;
+    flex-direction: row
+}
+
+.ImagesPlaceholder {
+    height: 200px;
+    width: 150px;
+}
