@@ -3,8 +3,7 @@ import React from 'react';
 function CustomHeader(props) {
   const container_style = {
     width: "100%",
-    height: "300px",
-    position: "relative",
+    height: "260px",
     textAlign: "center",
     background: "black"
   }
@@ -12,15 +11,17 @@ function CustomHeader(props) {
   const text_style = {
     position: "relative",
     fontSize: "72px",
-    color: "white",
-    top: "-80%",
+    fontWeight: "800",
+    fontFamily: "Helvetica",
+    color: "#FCFAFF",
+    top: "-85%",
   }
 
   const img_style = {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    opacity: "0.6",
+    opacity: "0.5",
   }
 
   return (

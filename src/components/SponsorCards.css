@@ -1,0 +1,10 @@
+.sponsorCard {
+    border-Radius: 12px;
+    width: 228px;
+    height: 162px;
+    object-fit: cover;
+}
+
+.sponsorCard:hover{
+    transform: scale(0.97)
+}

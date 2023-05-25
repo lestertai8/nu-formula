@@ -2,44 +2,44 @@ import React from 'react';
 
 function AboutTeamContainerLeft(props) {
   const container_style = {
-    width: "80%",
+    width: "85%",
     minHeight: "300px",
     height: "100%",
-    position: "relative",
-    background: "white",
+    background: "#FCFAFF",
     justifyContent: "left",
     display: "flex",
-    margin: "60px 0px 40px"
+    margin: "60px 0px 40px",
+    borderRadius: "12px"
   }
 
   const img_style = {
     width: '300px',
     height: 'auto',
     objectFit: 'cover',
-    position: "relative",
   }
 
   const text_style   = {
-    position: "relative",
     padding: "40px",
-    width: "67%"
+    width: "68%"
   }
 
   const heading_style = {
-    display: "block",
-    position: "relative",
     fontSize: "24px",
-    textAlign: "left"
+    fontFamily: "Helvetica",
+    textAlign: "left",
+    fontWeight: "800",
+    color: "#4F2C84"
   }
 
   const para_style = {
-    display: "block",
-    position: "relative",
     wordWrap: "break-word",
     whiteSpace: "pre-wrap",
+    fontFamily: "Helvetica",
     fontSize: "14px",
-    lineHeight: "1.5",
-    textAlign: "justify"
+    fontWeight: "500",
+    lineHeight: "1.7",
+    textAlign: "justify",
+    color: "#141316"
   }
   
 
@@ -55,43 +55,43 @@ function AboutTeamContainerLeft(props) {
 
 function AboutTeamContainerRight(props) {
   const container_style = {
-    width: "80%",
+    width: "85%",
     minHeight: "300px",
     height: "100%",
-    position: "relative",
-    background: "white",
+    background: "#FCFAFF",
     justifyContent: "right",
     display: "flex",
-    margin: "40px 0px 60px"
+    margin: "40px 0px 60px",
+    borderRadius: "12px"
   }
 
   const img_style = {
     width: '300px',
     height: 'auto',
     objectFit: 'cover',
-    position: "relative",
   }
 
   const text_style   = {
-    position: "relative",
     padding: "40px",
-    width: "67%"
+    width: "68%"
   }
 
   const heading_style = {
-    display: "block",
-    position: "relative",
     fontSize: "24px",
-    textAlign: "right"
+    fontFamily: "Helvetica",
+    textAlign: "right",
+    fontWeight: "800",
+    color: "#4F2C84"
   }
 
   const para_style = {
-    display: "block",
-    position: "relative",
     wordWrap: "break-word",
     fontSize: "14px",
-    lineHeight: "1.5",
-    textAlign: "justify"
+    fontFamily: "Helvetica",
+    fontWeight: "500",
+    lineHeight: "1.7",
+    textAlign: "justify",
+    color: "#141316"
   }
   
 

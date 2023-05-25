@@ -1,6 +1,7 @@
-import "../App.css";
+import React from "react";
 import "../components/CustomHeader.js";
 import CustomHeader from "../components/CustomHeader";
+
 import {
   AboutTeamContainerLeft,
   AboutTeamContainerRight,

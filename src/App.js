@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import AboutPage from "./pages/AboutPage";
 import TestingPage from "./pages/TestingPage";
 
