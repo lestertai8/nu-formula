@@ -1,0 +1,28 @@
+.FooterContainer {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    background-color: #401F68;
+}
+
+.SocialsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.SocialsCirclesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 275px;
+}
+
+.SocialsCircle {
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+}
