@@ -1,7 +1,11 @@
 import React from "react";
-import DonateInstructions from "./components/DonateInstructions";
-import CustomHeader from "./components/CustomHeader";
-import temp_img from "./assets/nutshell.png"
+import DonateInstructions from "../components/DonateInstructions";
+import CustomHeader from "../components/CustomHeader";
+import temp_img from "../assets/Slice 1.png"
+import step_2 from "../assets/Slice 2.png"
+import step_3 from "../assets/Slice 3.png"
+import step_4 from "../assets/Slice 4.png"
+import step_5 from "../assets/Slice 5.png"
 
 function DonatePage(){
     const bg_style = {
@@ -35,14 +39,14 @@ function DonatePage(){
                 <p1 style = {text_style}>Please contact us at <a href="nfr@u.northwestern.edu">nfr@u.northwestern.edu</a> if you have any questions!</p1>
                 <div style = {row_style}>
                     <DonateInstructions number = "1" instructions = <p> Go to <a href="https://www.northwestern.edu/giving/">https://www.northwestern.edu/giving/</a></p> img = {temp_img}></DonateInstructions>
-                    <DonateInstructions number = "2" instructions = "Click on the purple “Make A Gift Now” button in the middle of the page" img = {temp_img}></DonateInstructions>
+                    <DonateInstructions number = "2" instructions = "Click on the purple “Make A Gift Now” button in the middle of the page" img = {step_2}></DonateInstructions>
                 </div>
                 <div style = {row_style}>
-                    <DonateInstructions number = "3" instructions = "Enter the donation amount and click on “Search School and Program Funds”" img = {temp_img}></DonateInstructions>
-                    <DonateInstructions number = "4" instructions = "Search and select “NU Motorsports”" img = {temp_img}></DonateInstructions>
+                    <DonateInstructions number = "3" instructions = "Enter the donation amount and click on “Search School and Program Funds”" img = {step_3}></DonateInstructions>
+                    <DonateInstructions number = "4" instructions = "Search and select “NU Motorsports”" img = {step_4}></DonateInstructions>
                 </div>
                 <div style = {row_style}>
-                    <DonateInstructions number = "5" instructions = "Continue with the donation process as prompted" img = {temp_img}></DonateInstructions>
+                    <DonateInstructions number = "5" instructions = "Continue with the donation process as prompted" img = {step_5}></DonateInstructions>
                 </div>
             </div>
         </div>
