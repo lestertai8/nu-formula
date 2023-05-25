@@ -92,7 +92,6 @@ function App() {
           img={img}
         ></AboutTeamContainerRight>
       </div>
-      <Footer />
     </div>
   );
 }
