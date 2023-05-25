@@ -1,12 +1,38 @@
-.FooterContainer {
+.Container {
     display: flex;
     flex-direction: row;
-    flex: 1;
     justify-content: space-around;
     align-items: center;
-    height: 400px;
+    height: 350px;
     background-color: #401F68;
 }
+
+.Text {
+    position: relative;
+    padding: 40px;
+    color: white;
+}
+
+.Heading {
+    display: block;
+    font-size: 18px;
+    text-align: left;
+}
+
+.Para {
+    display: block;
+    position: relative;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.Subcontainer {
+    width: 350px;
+    height: 250px;
+};
 
 .SocialsContainer {
     display: flex;
@@ -16,13 +42,10 @@
 .SocialsCirclesContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 275px;
 }
 
-.SocialsCircle {
-    border-radius: 100px;
-    width: 70px;
-    height: 70px;
-    background-color: black;
+.SocialsIcon {
+    margin-right: 20px;
+    height: 60px;
+    width: 60px
 }

@@ -1,43 +1,26 @@
 import * as React from "react";
 import "../styles/Footer.css";
+
+// Images
 import logo from "../assets/logo.png";
-import socials from "../assets/socials.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+import youtube from "../assets/youtube.png";
 
-const CONDITIONS_TEXT =
-  'Northwestern Formula Racing owns all rights to the intellectual property and material contained in this website, and all such rights are reserved. This website is provided "as is", with no guarantee of completeness, accuracy, or timeliness. Northwestern Formula Racing is permitted to revise these conditions at any time as it deems fit.';
-
-const logo_scale = 0.5;
-
-const subcontainer_style = {
-  width: "350px",
-  height: "250px",
+// Data
+const DEFAULT_PROPS = {
+  CONDITIONS_TEXT:
+    'Northwestern Formula Racing owns all rights to the intellectual property and material contained in this website, and all such rights are reserved. This website is provided "as is", with no guarantee of completeness, accuracy, or timeliness. Northwestern Formula Racing is permitted to revise these conditions at any time as it deems fit.',
 };
 
-const text_style = {
-  position: "relative",
-  padding: "40px",
-  color: "white",
+const CONFIG = {
+  LOGO_SCALE: 0.5,
 };
 
-const heading_style = {
-  display: "block",
-  fontSize: "18px",
-  textAlign: "left",
-};
-
-const para_style = {
-  display: "block",
-  position: "relative",
-  wordWrap: "break-word",
-  whiteSpace: "pre-wrap",
-  fontSize: "14px",
-  lineHeight: "1.5",
-  textAlign: "justify",
-};
-
+// Components
 export default function ComboBox() {
   return (
-    <div style={text_style} className="FooterContainer">
+    <div className="Container Text">
       <SocialsContainer />
       <Logo />
       <Conditions />
@@ -45,36 +28,43 @@ export default function ComboBox() {
   );
 }
 
-const SOCIALS_SCALE = 0.3;
-
 const SocialsContainer = () => {
   return (
-    <div className="SocialsContainer" style={subcontainer_style}>
-      <h1 style={heading_style}>Follow our Socials!</h1>
+    <div className="SocialsContainer Subcontainer">
+      <h1 className="Heading">Follow our Socials!</h1>
       <div style={{ height: 10 }} />
-      <img
-        src={socials}
-        alt="Logo"
-        height={256 * SOCIALS_SCALE}
-        width={1014 * SOCIALS_SCALE}
-      />
-      {/* <div className="SocialsCirclesContainer">
-        <div className="SocialsCircle"></div>
-        <div className="SocialsCircle"></div>
-        <div className="SocialsCircle"></div>
-      </div> */}
+      <div className="SocialsCirclesContainer">
+        <img
+          src={facebook}
+          alt="Logo"
+          onClick={() => alert("Clicked facebook")}
+          className="SocialsIcon"
+        />
+        <img
+          src={instagram}
+          alt="Logo"
+          onClick={() => alert("Clicked instagram")}
+          className="SocialsIcon"
+        />
+        <img
+          src={youtube}
+          alt="Logo"
+          onClick={() => alert("Clicked youtube")}
+          className="SocialsIcon"
+        />
+      </div>
     </div>
   );
 };
 
 const Logo = () => {
   return (
-    <div style={subcontainer_style}>
+    <div className="Subcontainer">
       <img
         src={logo}
         alt="Logo"
-        height={275 * logo_scale}
-        width={564 * logo_scale}
+        height={275 * CONFIG.LOGO_SCALE}
+        width={564 * CONFIG.LOGO_SCALE}
       />
     </div>
   );
@@ -82,9 +72,9 @@ const Logo = () => {
 
 const Conditions = () => {
   return (
-    <div className="ConditionsContainer" style={subcontainer_style}>
-      <h1 style={heading_style}>Conditions</h1>
-      <p1 style={para_style}>{CONDITIONS_TEXT}</p1>
+    <div className="ConditionsContainer Subcontainer">
+      <h1 className="Heading">Conditions</h1>
+      <p1 className="Para">{DEFAULT_PROPS.CONDITIONS_TEXT}</p1>
     </div>
   );
 };

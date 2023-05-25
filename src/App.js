@@ -9,19 +9,10 @@ import Home from './pages/HomePage';
 import Members from './pages/MembersPage';
 import Sponsors from './pages/SponsorsPage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import AboutPage from "./pages/AboutPage";
+// import TestingPage from "./pages/TestingPage";
 
 function App() {
-  const bg_style = {
-    background: "lightgrey",
-  };
-  const left_style = {
-    display: "flex",
-    justifyContent: "left",
-  };
-  const right_style = {
-    display: "flex",
-    justifyContent: "right",
-  };
   return (
     <div className="App">
       {/* <header className="App-header">
