@@ -1,9 +1,11 @@
 import * as React from 'react';
+import Carousel from "../components/Carousel";
 import Typography from '@mui/material/Typography';
 
 const Home = () => {
     return(
-        <Typography>Home</Typography>
+        <div><Typography>Home</Typography>
+        <Carousel /></div>
     )
 };
 

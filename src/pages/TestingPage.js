@@ -1,11 +1,12 @@
 import React from "react";
-import InANutshellSection from "../components/InANutshellSection";
+import Carousel from "../components/Carousel";
+import OurTeamsSection from "../components/OurTeamsSection";
 
 function TestingPage() {
   return (
     <div>
       <text>testing page</text>
-      <InANutshellSection />
+      <Carousel />
     </div>
   );
 }

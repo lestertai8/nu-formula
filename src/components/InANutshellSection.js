@@ -2,33 +2,31 @@ import React, { useState } from "react";
 import Section from "./Section";
 import "../styles/InANutshellSection.css";
 
+const DATA = {
+  TEXT: "Formula NU is so cool. Lorem Ipsum. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+  LINK_TEXT: "Read More >",
+};
+
 export default function InANutshellSection() {
   return (
     <Section title="IN A NUTSHELL">
-      <ImagesContainer />
+      <div className="NutshellSectionContainer">
+        <ImagesContainer />
+        <TextAndLink />
+      </div>
     </Section>
   );
 }
 
 const ImagesContainer = () => {
+  return <div className="ImagePlaceholder"></div>;
+};
+
+const TextAndLink = () => {
   return (
-    <div className="ImagesTable">
-      <div className="ImagesRow">
-        <div>
-          <text>Image 1</text>
-        </div>
-        <div>
-          <text>Image 2</text>
-        </div>
-      </div>
-      <div className="ImagesRow">
-        <div>
-          <text>Image 3</text>
-        </div>
-        <div>
-          <text>Image 4</text>
-        </div>
-      </div>
+    <div className="TextAndLink">
+      <text>{DATA.TEXT}</text>
+      <a>{DATA.LINK_TEXT}</a>
     </div>
   );
 };

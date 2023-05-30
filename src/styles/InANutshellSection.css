@@ -1,15 +1,16 @@
-.ImagesTable {
+.NutshellSectionContainer {
     display: flex;
-    flex-direction: column;
-    background-color: grey;
+    flex-direction: row;
 }
 
-.ImagesRow {
-    display: flex;
-    flex-direction: row
+.ImagePlaceholder {
+    height: 440px;
+    width: 560px;
+    background-color: azure;
+    margin: 1px
 }
 
-.ImagesPlaceholder {
-    height: 200px;
-    width: 150px;
+.TextAndLink {
+    display: flex;
+    flex-direction: column
 }
