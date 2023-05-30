@@ -1,7 +1,11 @@
 import React from "react";
 import DonateInstructions from "../components/DonateInstructions";
 import CustomHeader from "../components/CustomHeader";
-import temp_img from "../assets/facebook.png";
+import temp_img from "../assets/Slice 1.png";
+import step_2 from "../assets/Slice 2.png";
+import step_3 from "../assets/Slice 3.png";
+import step_4 from "../assets/Slice 4.png";
+import step_5 from "../assets/Slice 5.png";
 
 function DonatePage() {
   const bg_style = {
@@ -52,26 +56,26 @@ function DonatePage() {
           <DonateInstructions
             number="2"
             instructions="Click on the purple “Make A Gift Now” button in the middle of the page"
-            img={temp_img}
+            img={step_2}
           ></DonateInstructions>
         </div>
         <div style={row_style}>
           <DonateInstructions
             number="3"
             instructions="Enter the donation amount and click on “Search School and Program Funds”"
-            img={temp_img}
+            img={step_3}
           ></DonateInstructions>
           <DonateInstructions
             number="4"
             instructions="Search and select “NU Motorsports”"
-            img={temp_img}
+            img={step_4}
           ></DonateInstructions>
         </div>
         <div style={row_style}>
           <DonateInstructions
             number="5"
             instructions="Continue with the donation process as prompted"
-            img={temp_img}
+            img={step_5}
           ></DonateInstructions>
         </div>
       </div>
