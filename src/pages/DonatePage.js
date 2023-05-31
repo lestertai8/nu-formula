@@ -6,6 +6,7 @@ import step_2 from "../assets/Slice 2.png"
 import step_3 from "../assets/Slice 3.png"
 import step_4 from "../assets/Slice 4.png"
 import step_5 from "../assets/Slice 5.png"
+import img from "../fsae.jpeg";
 
 function DonatePage(){
     const bg_style = {
@@ -34,7 +35,7 @@ function DonatePage(){
     }
     return (
         <div style = {bg_style}>
-            <CustomHeader name = "Donate" img = {temp_img}></CustomHeader>
+            <CustomHeader name = "Donate" img = {img}></CustomHeader>
             <div style = {container_style}>
                 <p1 style = {text_style}>Please contact us at <a href="nfr@u.northwestern.edu">nfr@u.northwestern.edu</a> if you have any questions!</p1>
                 <div style = {row_style}>

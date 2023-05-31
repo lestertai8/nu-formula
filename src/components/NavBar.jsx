@@ -3,61 +3,32 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-// import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import Button from '@mui/material/Button';
+import logo from "../assets/logo.png"
 
-const pages = ['Home','Our Board', 'About FSAE', 'Sponsors', 'Donate'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
+
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: '#4F2C84', boxShadow: 'none' }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
+        <Toolbar>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -88,134 +59,83 @@ function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
-              <Link
+              <MenuItem
+                component={Link}
                 to={"/"}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                HOME
-              </Link>
-              <Link
+                onClick={handleCloseNavMenu}>
+                Home
+              </MenuItem>
+              <MenuItem
+                component={Link}
                 to={"/about"}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                ABOUT FSAE
-              </Link>
-              <Link
-                to={"/donate"}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                DONATE
-              </Link>
-              <Link
+                onClick={handleCloseNavMenu}>
+                About
+              </MenuItem>
+              <MenuItem
+                component={Link}
                 to={"/members"}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                OUR BOARD
-              </Link>
-              <Link
+                onClick={handleCloseNavMenu}>
+                Members
+              </MenuItem>
+              <MenuItem
+                component={Link}
                 to={"/sponsors"}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                SPONSORS
-              </Link>
-
+                onClick={handleCloseNavMenu}>
+                Sponsors
+              </MenuItem>
+              <MenuItem
+                component={Link}
+                to={"/donate"}
+                onClick={handleCloseNavMenu}>
+                Donate
+              </MenuItem>
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-              <Link
-                to={"/"}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                HOME
-              </Link>
-              <Link
+          <Box sx={{
+            flexGrow: 1,
+            display: { xs: 'none', md: 'flex' },
+            justifyContent: 'space-between',
+            alignItems: 'center',
+          }}>
+              <Button
+                component={Link}
                 to={"/about"}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                ABOUT FSAE
-              </Link>
-              <Link
-                to={"/donate"}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                DONATE
-              </Link>
-              <Link
+                sx={{ color: 'white', display: 'flex', textAlign: 'center' }}
+                style={{ width: '144px', height: '50px' }}>
+                  ABOUT
+              </Button>
+              <Button
+                component={Link}
                 to={"/members"}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                OUR BOARD
+                sx={{ color: 'white', display: 'flex', textAlign: 'center' }}
+                style={{ width: '144px', height: '50px' }}>
+                  Members
+              </Button>
+              <Link to={"/"}>
+                <img
+                  src={logo}
+                  alt="Logo"
+                  style={{ width: '205px', height: 'auto', cursor: 'pointer' }}
+                />
               </Link>
-              <Link
+              <Button
+                component={Link}
                 to={"/sponsors"}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                SPONSORS
-              </Link>
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip> */}
-            {/* <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu> */}
+                sx={{ color: 'white', display: 'flex', textAlign: 'center' }}
+                style={{ width: '144px', height: '50px' }}>
+                  Sponsors
+              </Button>
+              <Button
+                component={Link}
+                to={"/donate"}
+                onClick={handleCloseNavMenu}
+                sx={{ color: 'white', display: 'flex', textAlign: 'center' }}
+                style={{ width: '144px', height: '50px' }}>
+                  Donate
+              </Button>
           </Box>
         </Toolbar>
       </Container>
