@@ -34,23 +34,25 @@ const VerticalSwitchBar = ({ selected, setSelected }) => {
 };
 
 const SwitchButton = ({ value, selected, setSelected }) => {
-  if (selected === value) {
-    return (
-      <div
-        onClick={() => setSelected(value)}
-        className="SwitchButtonBase SwitchButtonSelected"
-      >
-        <text>{value}</text>
-      </div>
-    );
-  }
   return (
-    <div
-      onClick={() => setSelected(value)}
-      className="SwitchButtonBase SwitchButtonUnselected"
-    >
-      <text>{value}</text>
-    </div>
+    <>
+      {selected === value && (
+        <div
+          onClick={() => setSelected(value)}
+          className="SwitchButtonBase SwitchButtonSelected"
+        >
+          <text>{value}</text>
+        </div>
+      )}
+      {selected !== value && (
+        <div
+          onClick={() => setSelected(value)}
+          className="SwitchButtonBase SwitchButtonUnselected"
+        >
+          <text>{value}</text>
+        </div>
+      )}
+    </>
   );
 };
 
