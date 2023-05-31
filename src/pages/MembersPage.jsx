@@ -2,7 +2,7 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 
 import CustomHeader from "../components/CustomHeader";
-import img from "../fsae.jpeg";
+import img from "../assets/fsae.jpeg";
 import MemberCard from "../components/MemberCard"
 import mem1 from "../assets/people/Sarah Yung.jpg";
 import mem2 from "../assets/people/Christopher Uustal.png";
@@ -20,8 +20,8 @@ const Members = () => {
     }
     return(
         <div style = {bg_style}>
-            <CustomHeader name = "Members" img = {img}></CustomHeader>
-            <div style={{display: 'flex', justifyContent: 'center', padding: '25px 60px'}}>
+            <CustomHeader name = "Our Board" img = {img}></CustomHeader>
+            <div style={{display: 'flex', justifyContent: 'center', padding: '60px 174px'}}>
                 <Grid container spacing={6} sx={{ justifyContent: 'center', alignItems: 'center' }}>
                     <Grid item xs={12} sm={6} md={4} lg={4}>
                         <MemberCard name="Sarah Yung" title="Project Manager" image={mem1} bio="Sarah is a third-year mechanical engineering student hailing from Mountain View, California. After designing the undertray and managing the aerodynamics subteam, she is thrilled to lead such a talented and dedicated team through this exciting transition. Sarah also works in the university's machine shop and sings with Treblemakers A Cappella. In her free time, she enjoys all things creative, like knitting, woodworking, and writing poetry." />

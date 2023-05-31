@@ -14,7 +14,7 @@ const SponsorHeading = ({title}) => {
             padding: '10px',
             gap: '10px',
             width: '900px',
-            height: '80px',
+            height: '60px',
             background: 'linear-gradient(90deg, rgba(79, 44, 132, 0) 0%, #4F2C84 48.78%, rgba(79, 44, 132, 0) 98.81%)',
             borderRadius: '100px'
           }}>
@@ -27,7 +27,8 @@ const SponsorHeading = ({title}) => {
                     fontSize: '32px',
                     lineHeight: '37px',
                     textAlign: 'center',
-                    color: '#FDFCFF'
+                    color: '#FDFCFF',
+                    margin: "0px"
                 }}>
                     {title}
                 </Typography>

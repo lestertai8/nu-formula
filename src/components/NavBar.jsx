@@ -111,7 +111,7 @@ function NavBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ color: 'white', display: 'flex', textAlign: 'center' }}
                 style={{ width: '144px', height: '50px' }}>
-                  Members
+                  Our Board
               </Button>
               <Link to={"/"}>
                 <img

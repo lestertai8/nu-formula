@@ -1,74 +1,37 @@
 .ImgText {
-    /* img text */
-
-    /* Auto layout */
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: 0px;
-    
-
-    width: 1292px;
-    height: 440px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    gap: 60px;
+    height: auto;
 }
 
 .ImagePlaceholder {
-    box-sizing: border-box;
-
-    width: 560px;
-    height: 440px;
-
+    width: 60%;
+    height: 60%;
+    max-width: 560px;
+    min-height: 440px;
     border: 0.2px solid #4F2C84;
     border-radius: 12px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    object-fit: cover;
 }
 
 .TextAndLink {
-    /* Auto layout */
-
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-padding: 0px;
-gap: 32px;
-
-width: 656px;
-height: 397.75px;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 24px;
 }
 
 .TextContent {
-    width: 656px;
-height: 312px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-text-align: left;
-/* or 171% */
-
-
-color: #000000;
+    width: 100%;
+    line-height: 1.7;
+    font-family: Helvetica;
+    font-weight: 500;
+    font-size: 14px;
+    word-wrap: break-word;
+    text-align: left;
 }

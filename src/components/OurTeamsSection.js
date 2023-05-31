@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import aero from "../assets/teams/aerodynamics.jpeg"
+import chassis from "../assets/teams/chassis.jpeg"
+import elec from "../assets/teams/electronics.jpeg"
+import pt from "../assets/teams/powertrain.jpeg"
+import sus from "../assets/teams/suspension.jpeg"
 import LightSection from "./LightSection";
 import VerticalSwitchBar from "./VerticalSwitchBar";
 import "../styles/OurTeamsSection.css";
@@ -49,33 +54,28 @@ export default function OurTeamsSection() {
     switch (selected) {
       case "Aerodynamics":
         return (
-          <div className="Photo">
-            <text>Aerodynamics</text>
-          </div>
+          <img className="Photo" src= {aero} alt= "aerodynamics">
+          </img>
         );
       case "Chassis":
         return (
-          <div className="Photo">
-            <text>Chassis</text>
-          </div>
+          <img className="Photo" src= {chassis} alt= "chassis">
+          </img>
         );
       case "Electronics":
         return (
-          <div className="Photo">
-            <text>Electronics</text>
-          </div>
+          <img className="Photo" src= {elec} alt= "electronics">
+          </img>
         );
       case "Powertrain":
         return (
-          <div className="Photo">
-            <text>Powertrain</text>
-          </div>
+          <img className="Photo" src= {pt} alt= "powertrain">
+          </img>
         );
       case "Suspension":
         return (
-          <div className="Photo">
-            <text>Suspension</text>
-          </div>
+          <img className="Photo" src= {sus} alt= "suspension">
+          </img>
         );
     }
   };

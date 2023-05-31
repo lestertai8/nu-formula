@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LightSection from "./LightSection";
 import Button from "./Button";
 import "../styles/InANutshellSection.css";
+import nutshell from "../assets/nutshell.png"
 
 const DATA = {
   BUTTON_TEXT: "Read More >",
@@ -11,7 +12,7 @@ export default function InANutshellSection() {
   return (
     <LightSection title="In A Nutshell">
       <div className="ImgText">
-        <ImagesContainer />
+        <ImagesContainer src = {nutshell}/>
         <TextAndLink />
       </div>
     </LightSection>
@@ -19,7 +20,7 @@ export default function InANutshellSection() {
 }
 
 const ImagesContainer = () => {
-  return <div className="ImagePlaceholder"></div>;
+  return <img className="ImagePlaceholder" src = {nutshell}></img>;
 };
 
 const TextAndLink = () => {

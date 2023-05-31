@@ -32,9 +32,9 @@ const MemberCard = ({name, title, image, bio}) => {
         <div>
             <Card
             sx={{
-                borderRadius: '8px',
-                width: 450, // Set the desired width
-                height: 650, // Set the desired height
+                borderRadius: '12px',
+                width: 280, // Set the desired width
+                height: 400, // Set the desired height
             }}>
                 <CardMedia component="img" src={image} alt={name} onClick={handleOpen} sx={{cursor: 'pointer', width: '100%', height: '80%', objectFit: 'cover'}}/>
                 <CardContent>

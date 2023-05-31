@@ -5,7 +5,8 @@ function DonateInstructions(props) {
         width: "500px",
         height: "320px",
         borderRadius: "12px",
-        objectFit: "scale-down"
+        objectFit: "None",
+        background: "#FDFCFF"
     }
 
     const circle_style = {

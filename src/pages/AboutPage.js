@@ -6,13 +6,13 @@ import {
   AboutTeamContainerLeft,
   AboutTeamContainerRight,
 } from "../components/AboutTeamContainer";
-import img from "../fsae.jpeg";
+import img from "../assets/fsae.jpeg";
 
 import Footer from "../components/Footer.js";
 
 function App() {
   const bg_style = {
-    background: "lightgrey",
+    background: "#141316",
   };
   const left_style = {
     display: "flex",

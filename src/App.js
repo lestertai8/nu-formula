@@ -1,6 +1,6 @@
 import "./App.css";
 import "./components/CustomHeader.js";
-
+import React from 'react'
 import Footer from "./components/Footer.js";
 import NavBar from './components/NavBar.jsx';
 import About from './pages/AboutPage';

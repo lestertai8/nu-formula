@@ -7,9 +7,6 @@
     padding: 60px 74px;
     gap: 20px;
 
-    width: 1440px;
-    height: 631.6px;
-
     background: #FDFCFF;
 
     /* Inside auto layout */
@@ -22,8 +19,6 @@
 .SectionHeader {
     /* In a Nutshell */
 
-    width: 216.07px;
-    height: 51.6px;
 
     font-family: 'Helvetica';
     font-style: normal;

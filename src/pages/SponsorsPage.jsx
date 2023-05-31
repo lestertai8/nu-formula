@@ -2,7 +2,7 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 
 import CustomHeader from "../components/CustomHeader";
-import img from "../fsae.jpeg";
+import img from "../assets/fsae.jpeg";
 import SponsorHeading from "../components/SponsorHeading";
 import SponsorCard from "../components/SponsorCard";
 
@@ -65,11 +65,14 @@ const Sponsors = () => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        gap: "60px"
     }
     return(
         <div style = {bg_style}>
             <CustomHeader name = "Sponsors" img = {img}></CustomHeader>
+
+            <div style = {{padding: "20px 80px", display: 'flex', flexDirection: "column", alignItems: 'center', gap: "10px"}}>
             <SponsorHeading title="Platinum"/>
                 <div style={{display: 'flex', justifyContent: 'center', padding: '25px 100px'}}>
                     <Grid container spacing={4} sx={{ justifyContent: 'center', alignItems: 'center' }}>
@@ -96,8 +99,9 @@ const Sponsors = () => {
                         </Grid>
                     </Grid>
                 </div>
+                </div>
                 
-
+                <div style = {{padding: "0px 80px", display: 'flex', flexDirection: "column", alignItems: 'center', gap: "10px"}}>
             <SponsorHeading title="Gold"/>
                 <div style={{display: 'flex', justifyContent: 'center', padding: '25px 100px'}}>
                     <Grid container spacing={4} sx={{ justifyContent: 'center', alignItems: 'center' }}>
@@ -130,7 +134,9 @@ const Sponsors = () => {
                         </Grid>
                     </Grid>
                 </div>
+                </div>
 
+                <div style = {{padding: "0px 80px", display: 'flex', flexDirection: "column", alignItems: 'center', gap: "10px"}}>
             <SponsorHeading title="Silver"/>
                 <div style={{display: 'flex', justifyContent: 'center', padding: '25px 100px'}}>
                     <Grid container spacing={4} sx={{ justifyContent: 'center', alignItems: 'center' }}>
@@ -187,7 +193,9 @@ const Sponsors = () => {
                         </Grid>
                     </Grid>
                 </div>
+                </div>
 
+                <div style = {{padding: "0px 80px", display: 'flex', flexDirection: "column", alignItems: 'center', gap: "10px"}}>
             <SponsorHeading title="Bronze"/>
                 <div style={{display: 'flex', justifyContent: 'center', padding: '25px 100px'}}>
                     <Grid container spacing={4} sx={{ justifyContent: 'center', alignItems: 'center' }}>
@@ -228,6 +236,7 @@ const Sponsors = () => {
                             <SponsorCard image={Bronze12} link="https://www.mmus.com/"/>
                         </Grid>
                     </Grid>
+                </div>
                 </div>
         </div>
     )

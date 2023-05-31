@@ -1,12 +1,12 @@
 import React from "react";
 import DonateInstructions from "../components/DonateInstructions";
 import CustomHeader from "../components/CustomHeader";
-import temp_img from "../assets/Slice 1.png"
-import step_2 from "../assets/Slice 2.png"
-import step_3 from "../assets/Slice 3.png"
-import step_4 from "../assets/Slice 4.png"
-import step_5 from "../assets/Slice 5.png"
-import img from "../fsae.jpeg";
+import temp_img from "../assets/donate/1.png"
+import step_2 from "../assets/donate/2.png"
+import step_3 from "../assets/donate/3.png"
+import step_4 from "../assets/donate/4.png"
+import step_5 from "../assets/donate/5.png"
+import img from "../assets/fsae.jpeg";
 
 function DonatePage() {
   const bg_style = {
