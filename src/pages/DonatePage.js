@@ -35,7 +35,7 @@ function DonatePage() {
   };
   return (
     <div style={bg_style}>
-      <CustomHeader name="Donate" img={temp_img}></CustomHeader>
+      <CustomHeader name="Donate" img={img}></CustomHeader>
       <div style={container_style}>
         <p1 style={text_style}>
           Please contact us at{" "}
