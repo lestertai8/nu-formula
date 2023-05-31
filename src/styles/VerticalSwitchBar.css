@@ -1,16 +1,62 @@
 .SwitchButtonBase {
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    width: 130px;
-    margin: 15px
+    /* buttons */
+    width: 178px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .SwitchButtonSelected {
-    background-color: #777777;
+    
+    /* font */ 
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    color: #FDFCFF;
+
+    /* Rectangle 12 */
+
+    background: #8462B6;
+    border-radius: 50px;
+
 }
 
 .SwitchButtonUnselected {
-    background-color: #B6B6B6;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    
+    text-align: center;
+    
+    color: #8462B6;
+
+    /* background */
+
+    width: 178px;
+    height: 50px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }

@@ -1,0 +1,24 @@
+.Button {
+    /* buttons */
+    width: 150.5px;
+    height: 53.75px;
+    cursor: pointer;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.ButtonText {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    color: #141316;
+}

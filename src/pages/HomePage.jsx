@@ -1,9 +1,11 @@
 import * as React from 'react';
 import Typography from '@mui/material/Typography';
+import TestingPage from "./TestingPage"
 
 const Home = () => {
     return(
-        <Typography>Home</Typography>
+        <div><Typography>Home</Typography>
+        <TestingPage /></div>
     )
 };
 

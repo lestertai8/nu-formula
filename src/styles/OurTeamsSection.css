@@ -1,40 +1,47 @@
-.VerticalSwitchBarContainer {
-    display: flex;
-    padding-left: 100px;
-}
-
 .OurTeamsContainer {
+    /* Frame 13 */
+
+    /* Auto layout */
+
     display: flex;
-    flex: 3;
-    align-items: row;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 42px;
+
+    width: 1292px;
+    height: 400px;
 }
 
-.TextImageCaptionContainer {
-    display: flex;
-    flex: 2;
-    display: flex;
-    align-items: row;
-    justify-content: space-around;
-    margin: 30px;
-    margin-left: 150px;
+.Content {
+    width: 538px;
+    height: 360px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    white-space: pre-line;
+    text-align: left;
+
+    /* or 171% */
+    color: #000000;
 }
 
-.TeamDescriptionContainer {
-    display: flex;
-    flex: 1;
-    height: 100%;
-    font-size: 20px;
-    margin-right: 60px
-}
-
-.PhotoCaption {
+.Caption {
     display: flex;
     align-items: center;
     flex-direction: column
 }
 
-.TeamPhoto {
-    height: 250px;
-    width: 330px;
-    background-color: grey;
+.Photo {
+    /* image 14 */
+    box-sizing: border-box;
+
+    width: 492px;
+    height: 400px;
+
+    border: 0.2px solid #4F2C84;
+    border-radius: 12px;
 }
