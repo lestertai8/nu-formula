@@ -8,12 +8,6 @@
     gap: 20px;
 
     background: #FDFCFF;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
 .SectionHeader {
@@ -26,12 +20,7 @@
     font-size: 32px;
     line-height: 37px;
     text-align: left;
-
     color: #4F2C84;
 
-    /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }

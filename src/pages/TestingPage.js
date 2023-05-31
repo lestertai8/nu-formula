@@ -7,11 +7,10 @@ import OurTeamsSection from "../components/OurTeamsSection";
 function TestingPage() {
   return (
     <div>
-      <text>testing page</text>
       <HomepageHeaderSection />
       <InANutshellSection />
-      <OurTeamsSection />
       <Carousel />
+      <OurTeamsSection />
     </div>
   );
 }

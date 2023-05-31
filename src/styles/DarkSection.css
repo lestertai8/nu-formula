@@ -1,14 +1,8 @@
 .DarkSectionContainer {
-    /* Auto layout */
-
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
-
-    height: 631.6px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    background: black;
+    padding: 60px 74px;
+    background: #141316;
 }
