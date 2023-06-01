@@ -4,7 +4,7 @@ import TestingPage from "./TestingPage"
 
 const Home = () => {
     return(
-        <div><Typography>Home</Typography>
+        <div>
         <TestingPage /></div>
     )
 };
